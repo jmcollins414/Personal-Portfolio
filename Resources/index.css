@@ -1,0 +1,289 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  width: 100%;
+}
+
+/*    CSS RESET END */
+a:link {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+a:visited{
+  color: #f0f0f0;
+}
+
+main {
+background: hsla(203, 10%, 16%, 1);
+
+background: linear-gradient(145deg, hsla(203, 10%, 16%, 1) 0%, hsla(201, 9%, 36%, 1) 100%);
+
+background: -moz-linear-gradient(145deg, hsla(203, 10%, 16%, 1) 0%, hsla(201, 9%, 36%, 1) 100%);
+
+background: -webkit-linear-gradient(145deg, hsla(203, 10%, 16%, 1) 0%, hsla(201, 9%, 36%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#252A2D", endColorstr="#535E64", GradientType=1 );
+
+
+
+  width: 100%;
+  padding-top: 150px;
+  
+}
+/* ----------------NAV START------------------------------*/
+nav {
+  background-color: #be3144;
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+li {
+  font-size: 1.75em;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/*------NAV END------- */
+
+/* --------WELCOME START-----------*/
+#welcome-section{
+  height: 100vh;
+}
+.welcome-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.header-name {
+  font-size: 5em;
+  color: #f0f0f0;
+  text-align: center;
+}
+.header-job{
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 100;
+  color: #db465a;
+  text-align: center;
+}
+
+/* --------WELCOME END-----------*/
+
+/*------------- WORK SECTION START---------*/
+#projects {
+  background-color: #45567d;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.projects-div {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-div h2 {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+
+.tiles-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+}
+
+.projects-header {
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 40px;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+
+.project-name {
+  text-align: center;
+  color: #f0f0f0;
+  background-color: #303841;
+}
+
+.show-all-bttn {
+  display: block;
+  margin: auto;
+  border: none;
+  text-align: center;
+  background-color: #303841;
+  color: #f0f0f0;
+  padding: 5px 15px;
+}
+
+/* ---------WORK SECTION END---------*/
+
+/*----------WORK TOGETHER SECTION START */
+
+#work-together{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  background-color: #303841;
+  color: #f0f0f0;
+}
+.social-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
+}
+.facebook,
+.github,
+.twitter,
+.email,
+.call-me {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  flex: 1 1 0px;
+}
+/*----------------------*/
+.call-me p {
+  padding: 10px;
+}
+.twitter p {
+  padding: 10px;
+}
+.github p {
+  padding: 10px;
+}
+.facebook p {
+  padding: 10px;
+}
+.email p {
+  padding: 10px;
+}
+.call-me {
+  padding: 10px;
+}
+/*----------------*/
+
+/*----------WORK TOGETHER SECTION END */
+/*-----FOOTER-------*/
+footer{
+  display: flex;
+  justify-content: space-around;
+  border-top: 5px solid #be3144;
+  background-color:#303841;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #f0f0f0;
+  
+}
+
+/* degrade in layout at  664px wide add media query to make project tiles flexbox into columns instead of rows*/
+@media only screen and (max-width: 664px){
+  .tiles-div{
+    display:flex;
+    flex-direction: column;
+  }
+  .social-links{
+    display:flex;
+    flex-direction: column;
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0px;
+    flex-wrap: wrap;
+  }
+  #welcome-section{
+    max-height: 100%;
+  }
+}
